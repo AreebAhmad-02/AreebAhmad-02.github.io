@@ -53,7 +53,7 @@ html[data-theme="dark"] .cta { color:#1a1a1a; background:#ffe680; }
 html[data-theme="dark"] .viewer { border-color:#444; }
 
 /* ---- header bar: social icons left, nav + toggle right ---- */
-header.top { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:4px 0 18px; flex-wrap:wrap; }
+header.top { display:flex; justify-content:flex-end; align-items:center; gap:12px; padding:4px 0 18px; flex-wrap:wrap; }
 header.top nav { padding:0; align-items:center; }
 .navsoc { display:flex; gap:14px; font-size:19px; align-items:center; }
 .navsoc a { color:var(--text); opacity:.85; }
