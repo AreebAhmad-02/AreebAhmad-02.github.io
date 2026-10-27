@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV | Areeb Ahmad Chaudhry</title>
+<meta name="description" content="CV of Areeb Ahmad Chaudhry.">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .wrap.wide { max-width:980px; }
+  .cvhead { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; }
+  .cvhead h1 { margin:0; }
+  .updated { color:var(--muted); margin:6px 0 18px; }
+  .dl { display:inline-flex; flex-direction:column; align-items:center; font-size:12px; font-weight:700; color:var(--link); }
+  .dl svg { width:40px; height:48px; }
+  .viewer { width:100%; height:85vh; min-height:600px; border:1px solid #ccc; border-radius:4px; background:#525659; }
+  .fallback { display:none; }
+  @media (max-width:640px) {
+    .viewer { height:70vh; min-height:420px; }
+    .fallback { display:block; margin-top:10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap wide">
+  <nav><a href="index.html">Home</a><a href="industry.html">Industry</a><a class="on" href="cv.html">CV</a></nav>
+
+  <div class="cvhead">
+    <h1>CV</h1>
+    <a class="dl" href="Areeb_Ahmad_Chaudhry_CV.pdf" download title="Download CV (PDF)">
+      <svg viewBox="0 0 40 48" aria-hidden="true"><path d="M4 0h22l14 14v30a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" fill="#1772d0"/><path d="M26 0v10a4 4 0 0 0 4 4h10z" fill="#7fb3e6"/><text x="20" y="38" text-anchor="middle" font-family="Lato,Arial,sans-serif" font-size="11" font-weight="700" fill="#fff">PDF</text></svg>
+      Download
+    </a>
+  </div>
+  <p class="updated">Last updated October 2026.</p>
+
+  <iframe class="viewer" src="Areeb_Ahmad_Chaudhry_CV.pdf#view=FitH" title="Areeb Ahmad Chaudhry CV"></iframe>
+  <p class="fallback">If the CV doesn't show on your phone, <a href="Areeb_Ahmad_Chaudhry_CV.pdf">open the PDF here</a>.</p>
+
+  <p class="foot">Design based on <a href="https://github.com/jonbarron/website">Jon Barron's template</a>.</p>
+</div>
+</body>
+</html>
