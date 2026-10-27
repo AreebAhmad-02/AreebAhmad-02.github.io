@@ -43,3 +43,34 @@ li { margin:4px 0; }
   .row { flex-direction:column; gap:0; }
 }
 .btns a { font-weight:700; margin-right:4px; }
+
+/* ---- theme: dark ---- */
+html[data-theme="dark"] { --link:#6ab0ff; --hover:#ffb35c; --text:#e6e6e6; --muted:#a0a0a0; --hl:#2a2a1c; --chip:#1d2a3a; --rule:#333; }
+html[data-theme="dark"] body { background:#121212; }
+html[data-theme="dark"] .chip { color:#9cc8ff; }
+html[data-theme="dark"] .pub .thumb img { border-color:#444; }
+html[data-theme="dark"] .cta { color:#1a1a1a; background:#ffe680; }
+html[data-theme="dark"] .viewer { border-color:#444; }
+
+/* ---- header bar: social icons left, nav + toggle right ---- */
+header.top { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:4px 0 18px; flex-wrap:wrap; }
+header.top nav { padding:0; align-items:center; }
+.navsoc { display:flex; gap:14px; font-size:19px; align-items:center; }
+.navsoc a { color:var(--text); opacity:.85; }
+.navsoc a:hover { color:var(--hover); opacity:1; }
+.hfi { font-size:18px; line-height:1; filter:grayscale(0.2); }
+.theme { background:none; border:1px solid var(--rule); color:var(--text); width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:14px; display:inline-flex; align-items:center; justify-content:center; }
+.theme:hover { color:var(--hover); border-color:var(--hover); }
+
+/* ---- under the photo: CV link + round icon buttons ---- */
+.photo .cvlink { display:block; margin:12px 0 8px; font-weight:700; font-style:italic; letter-spacing:.3px; }
+.circsoc { display:flex; flex-wrap:wrap; justify-content:center; gap:5px; }
+.circsoc a { width:30px; height:30px; border:1px solid var(--rule); border-radius:50%; display:inline-flex; align-items:center; justify-content:center; color:var(--text); font-size:13px; }
+.circsoc a:hover { color:var(--hover); border-color:var(--hover); }
+.circsoc .hfi { font-size:15px; }
+
+@media (max-width:640px) {
+  header.top { justify-content:center; }
+  .navsoc { justify-content:center; width:100%; }
+  header.top nav { justify-content:center; width:100%; }
+}

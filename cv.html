@@ -6,6 +6,9 @@
 <title>CV | Areeb Ahmad Chaudhry</title>
 <meta name="description" content="CV of Areeb Ahmad Chaudhry.">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="stylesheet" href="style.css">
 <style>
   .wrap.wide { max-width:980px; }
@@ -24,7 +27,7 @@
 </head>
 <body>
 <div class="wrap wide">
-  <nav><a href="index.html">Home</a><a href="industry.html">Industry</a><a class="on" href="cv.html">CV</a></nav>
+  <header class="top"><div class="navsoc"><a href="mailto:chaudhry.bese21seecs@seecs.edu.pk" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><a href="https://scholar.google.com/citations?user=gaDnnFwAAAAJ" title="Google Scholar" aria-label="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a><a href="https://github.com/AreebAhmad-02" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a><a href="https://linkedin.com/in/areeb-ahmad02" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a><a href="https://huggingface.co/Areeb-02" title="Hugging Face" aria-label="Hugging Face" target="_blank" rel="noopener"><span class="hfi">🤗</span></a><a href="https://medium.com/@ahmadareeb3026" title="Medium" aria-label="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a><a href="https://x.com/areebahmad_ai" title="X" aria-label="X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a></div><nav><a href="index.html">Home</a><a href="index.html#articles">Articles</a><a href="industry.html">Industry</a><a class="on" href="cv.html">CV</a><button class="theme" id="themeBtn" type="button" aria-label="Switch light or dark mode" title="Light / dark"><i class="fa-solid fa-moon"></i></button></nav></header>
 
   <div class="cvhead">
     <h1>CV</h1>
@@ -40,5 +43,11 @@
 
   <p class="foot">Design based on <a href="https://github.com/jonbarron/website">Jon Barron's template</a>.</p>
 </div>
+<script>
+(function(){var b=document.getElementById('themeBtn'),r=document.documentElement;
+function cur(){var t=r.getAttribute('data-theme');return t==='dark'?'dark':'light';}
+function ic(){b.innerHTML=cur()==='dark'?'<i class="fa-solid fa-sun"></i>':'<i class="fa-solid fa-moon"></i>';}
+b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}ic();});ic();})();
+</script>
 </body>
 </html>
