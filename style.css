@@ -1,7 +1,7 @@
-:root { --link:#1772d0; --hover:#f09228; --text:#222; --muted:#666; --hl:#ffffd0; --chip:#eef4fb; --rule:#e6e6e6; }
+:root { --bg:#fff; --link:#1772d0; --hover:#f09228; --text:#222; --muted:#666; --hl:#ffffd0; --chip:#eef4fb; --rule:#e6e6e6; }
 * { box-sizing:border-box; }
-body { margin:0; background:#fff; color:var(--text); font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:15px; line-height:1.6; }
-.wrap { max-width:860px; margin:0 auto; padding:20px 16px 48px; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:15px; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:0 16px 48px; }
 a { color:var(--link); text-decoration:none; }
 a:hover { color:var(--hover); }
 nav { display:flex; justify-content:flex-end; gap:22px; font-size:15px; padding:6px 0 18px; }
@@ -45,7 +45,7 @@ li { margin:4px 0; }
 .btns a { font-weight:700; margin-right:4px; }
 
 /* ---- theme: dark ---- */
-html[data-theme="dark"] { --link:#6ab0ff; --hover:#ffb35c; --text:#e6e6e6; --muted:#a0a0a0; --hl:#2a2a1c; --chip:#1d2a3a; --rule:#333; }
+html[data-theme="dark"] { --bg:#121212; --link:#6ab0ff; --hover:#ffb35c; --text:#e6e6e6; --muted:#a0a0a0; --hl:#2a2a1c; --chip:#1d2a3a; --rule:#333; }
 html[data-theme="dark"] body { background:#121212; }
 html[data-theme="dark"] .chip { color:#9cc8ff; }
 html[data-theme="dark"] .pub .thumb img { border-color:#444; }
@@ -53,7 +53,8 @@ html[data-theme="dark"] .cta { color:#1a1a1a; background:#ffe680; }
 html[data-theme="dark"] .viewer { border-color:#444; }
 
 /* ---- header bar: social icons left, nav + toggle right ---- */
-header.top { display:flex; justify-content:flex-end; align-items:center; gap:12px; padding:4px 0 18px; flex-wrap:wrap; }
+header.top { position:sticky; top:0; z-index:50; display:flex; justify-content:flex-end; align-items:center; gap:12px; padding:12px 0; margin-bottom:14px; flex-wrap:wrap; background:var(--bg); border-bottom:1px solid var(--rule); }
+header.top nav { margin-left:auto; }
 header.top nav { padding:0; align-items:center; }
 .navsoc { display:flex; gap:14px; font-size:19px; align-items:center; }
 .navsoc a { color:var(--text); opacity:.85; }
