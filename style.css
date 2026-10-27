@@ -74,3 +74,11 @@ header.top nav { padding:0; align-items:center; }
   .navsoc { justify-content:center; width:100%; }
   header.top nav { justify-content:center; width:100%; }
 }
+
+/* ---- articles grid ---- */
+.artgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin-top:10px; }
+.art { display:flex; flex-direction:column; border:1px solid var(--rule); border-radius:8px; overflow:hidden; color:var(--text); background:transparent; transition:transform .15s ease, border-color .15s ease; }
+.art:hover { transform:translateY(-2px); border-color:var(--hover); color:var(--text); }
+.art img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#f2f2f2; }
+.arttitle { font-weight:700; padding:10px 12px 4px; line-height:1.35; }
+.artdate { color:var(--muted); font-size:13px; padding:0 12px 12px; margin-top:auto; }
