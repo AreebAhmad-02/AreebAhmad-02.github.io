@@ -8,7 +8,7 @@ nav { display:flex; justify-content:flex-end; gap:22px; font-size:15px; padding:
 nav a.on { color:var(--text); font-weight:700; }
 h1 { font-size:34px; font-weight:400; margin:0 0 12px; }
 h2 { font-size:22px; font-weight:400; margin:34px 0 10px; padding-bottom:4px; border-bottom:1px solid var(--rule); }
-.intro { display:flex; gap:32px; align-items:center; }
+.intro { display:flex; gap:32px; align-items:flex-start; }
 .intro .bio { flex:1 1 64%; }
 .intro .photo { flex:0 0 30%; text-align:center; }
 .intro .photo img { width:100%; max-width:230px; aspect-ratio:1/1; object-fit:cover; object-position:50% 25%; border-radius:50%; }
@@ -85,3 +85,6 @@ header.top nav { padding:0; align-items:center; }
 .artdate { color:var(--muted); font-size:13px; padding:0 12px 12px; margin-top:auto; }
 h2[id], .pub[id] { scroll-margin-top:70px; }
 .sub { margin:14px 0 4px; color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.6px; }
+ul.interests { margin:4px 0 12px; }
+.intro .photo { padding-top:56px; }
+@media (max-width:640px){ .intro .photo { padding-top:0; } }
