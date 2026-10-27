@@ -84,3 +84,4 @@ header.top nav { padding:0; align-items:center; }
 .arttitle { font-weight:700; padding:10px 12px 4px; line-height:1.35; }
 .artdate { color:var(--muted); font-size:13px; padding:0 12px 12px; margin-top:auto; }
 h2[id], .pub[id] { scroll-margin-top:70px; }
+.sub { margin:14px 0 4px; color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.6px; }
