@@ -1,0 +1,45 @@
+:root { --link:#1772d0; --hover:#f09228; --text:#222; --muted:#666; --hl:#ffffd0; --chip:#eef4fb; --rule:#e6e6e6; }
+* { box-sizing:border-box; }
+body { margin:0; background:#fff; color:var(--text); font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:15px; line-height:1.6; }
+.wrap { max-width:860px; margin:0 auto; padding:20px 16px 48px; }
+a { color:var(--link); text-decoration:none; }
+a:hover { color:var(--hover); }
+nav { display:flex; justify-content:flex-end; gap:22px; font-size:15px; padding:6px 0 18px; }
+nav a.on { color:var(--text); font-weight:700; }
+h1 { font-size:34px; font-weight:400; margin:0 0 12px; }
+h2 { font-size:22px; font-weight:400; margin:34px 0 10px; padding-bottom:4px; border-bottom:1px solid var(--rule); }
+.intro { display:flex; gap:32px; align-items:center; }
+.intro .bio { flex:1 1 64%; }
+.intro .photo { flex:0 0 30%; text-align:center; }
+.intro .photo img { width:100%; max-width:230px; aspect-ratio:1/1; object-fit:cover; object-position:50% 25%; border-radius:50%; }
+.links { margin-top:10px; }
+.cta { background:var(--hl); padding:2px 6px; border-radius:4px; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 10px; }
+.chip { background:var(--chip); color:#1d4f86; font-size:13px; font-weight:700; padding:4px 10px; border-radius:14px; }
+ul { padding-left:20px; margin:6px 0; }
+li { margin:4px 0; }
+.date { color:var(--muted); display:inline-block; min-width:80px; font-weight:700; }
+.pub { display:flex; gap:22px; align-items:center; padding:14px 12px; border-radius:6px; margin:6px 0; }
+.pub.hl { background:var(--hl); }
+.pub .thumb { flex:0 0 28%; }
+.pub .thumb img { width:100%; border:1px solid #ddd; border-radius:4px; display:block; background:#fff; }
+.pub .txt { flex:1; }
+.papername { font-weight:700; }
+.venue { font-style:italic; }
+.pub p { margin:8px 0 0; }
+.row { display:flex; justify-content:space-between; gap:12px; margin:7px 0; }
+.row .when { color:var(--muted); white-space:nowrap; }
+.job { margin:18px 0; }
+.job ul { margin-top:4px; }
+.skills div { margin:5px 0; }
+.foot { text-align:right; font-size:12px; color:#999; margin-top:40px; }
+@media (max-width:640px) {
+  nav { justify-content:center; }
+  .intro { flex-direction:column-reverse; gap:12px; }
+  .intro .photo img { max-width:160px; }
+  h1 { text-align:center; }
+  .pub { flex-direction:column; align-items:flex-start; }
+  .pub .thumb { width:100%; }
+  .row { flex-direction:column; gap:0; }
+}
+.btns a { font-weight:700; margin-right:4px; }
