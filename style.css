@@ -88,3 +88,4 @@ h2[id], .pub[id] { scroll-margin-top:70px; }
 ul.interests { margin:4px 0 12px; }
 .intro .photo { padding-top:56px; }
 @media (max-width:640px){ .intro .photo { padding-top:0; } }
+@media (max-width:480px){ header.top nav { gap:12px; font-size:14px; } }
