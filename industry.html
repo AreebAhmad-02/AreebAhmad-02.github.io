@@ -22,47 +22,48 @@
   <div class="job">
     <div class="row"><div><a href="https://gosaas.ai/"><b>GoSaaS</b></a>, AI Engineer &nbsp;|&nbsp; Remote</div><div class="when">Jun 2025 to present</div></div>
     <ul>
-      <li>Built computer vision pipelines (OpenCV, fine-tuned YOLO) to extract data from scanned invoices and industrial P&amp;ID diagrams, and image-based semantic search matching part images to CAD drawings.</li>
-      <li>Enabled plain-language querying of enterprise Oracle databases with knowledge-graph agents, fine-tuned NL2SQL LLMs and hybrid (semantic + keyword) OpenSearch/Elasticsearch retrieval.</li>
-      <li>Shipped 8+ production ERP/CRM agents with built-in evaluation and monitoring on Oracle AI Agent Studio, published on the Oracle Marketplace, where Oracle partners use them as templates for their own ERP systems.</li>
+      <li>Automated overpayment settlement for the finance team of a NYSE-listed US consumer-products company: a 5-page manual workflow became a single request, saving over 10 minutes per settlement.</li>
+      <li>Replaced manual lookup for an enterprise client with image-based search over 20,000 CAD drawings, comparing open-source image encoders and embedding models to match part photos to the right drawing; built proof-of-concept data extraction from scanned invoices and industrial diagrams.</li>
+      <li>Shipped 8+ production agents with built-in evaluation on the Oracle Marketplace, now used by Oracle partners as templates for their ERP systems; prototyped plain-English (NL2SQL) querying of enterprise databases.</li>
     </ul>
   </div>
 
   <div class="job">
-    <div class="row"><div><a href="https://heartstamp.com/"><b>Heartstamp</b></a>, Founding AI Engineer, GTM &nbsp;|&nbsp; Las Vegas, USA (Remote)</div><div class="when">Sep 2025 to Jul 2026</div></div>
+    <div class="row"><div><a href="https://heartstamp.com/"><b>Heartstamp</b></a>, Founding AI Engineer &nbsp;|&nbsp; Las Vegas, USA (Remote)</div><div class="when">Sep 2025 to Jul 2026</div></div>
     <ul>
-      <li>Architected the product's core multi-agent LangGraph system (support, design and creative agents) with checkpointed memory, structured outputs and provider-agnostic model routing.</li>
-      <li>Built the evaluation and monitoring pipeline (DeepEval, LangSmith, OpenTelemetry) and hybrid semantic search (pgvector HNSW, full-text, RRF fusion, re-ranking) to catch regressions before release.</li>
+      <li>Designed the product's core multi-agent LLM system (support, design and creative agents), with persistent memory and provider-agnostic routing that let each task switch models without code changes, cutting generation cost.</li>
+      <li>Built an evaluation pipeline that benchmarked LLMs (GPT, Gemini, Grok and open-source models such as Kimi) on quality, speed and cost to choose production models, and caught regressions before each release.</li>
     </ul>
   </div>
 
   <div class="job">
-    <div class="row"><div><a href="https://codeacme.com/"><b>Codeacme</b></a>, AI Engineer, Contract &nbsp;|&nbsp; Islamabad, Pakistan (Remote)</div><div class="when">Mar 2025 to Sep 2025</div></div>
+    <div class="row"><div><a href="https://codeacme.com/"><b>Codeacme</b></a>, AI Engineer (Contract) &nbsp;|&nbsp; Islamabad, Pakistan (Remote)</div><div class="when">Mar 2025 to Sep 2025</div></div>
     <ul>
-      <li>Fine-tuned diffusion models with LoRA/PEFT and built end-to-end MLOps from training to serverless deployment, raising project delivery rate by 20%.</li>
+      <li>Compared open-source image-generation models (FLUX.1, Stable Diffusion, HunyuanImage, Qwen-Image) and trained 6–7 custom character and style LoRAs for subject-driven generation, including artist-style images for <a href="https://unsplash.com/">Unsplash</a>.</li>
+      <li>Shipped 15+ production ComfyUI workflows (image-to-image, style transfer, inpainting and outpainting, relighting, upscaling, colourisation), deployed to RunPod serverless through a CI/CD pipeline I built, removing always-on compute.</li>
     </ul>
   </div>
 
   <div class="job">
-    <div class="row"><div><a href="https://pam.ai/"><b>Pam AI</b></a>, AI Support Engineer, Contract &nbsp;|&nbsp; Virginia, USA (Remote)</div><div class="when">Dec 2024 to May 2025</div></div>
+    <div class="row"><div><a href="https://pam.ai/"><b>Pam AI</b></a>, AI Support Engineer (Contract) &nbsp;|&nbsp; Virginia, USA (Remote)</div><div class="when">Dec 2024 to May 2025</div></div>
     <ul>
-      <li>Reduced hallucinations in a production voice-AI system with agentic, multi-tool pipelines, cutting responses that needed human escalation.</li>
+      <li>Maintained an 8,000-line production prompt for a voice AI assistant used by hundreds of car dealerships; traced escalated failures in production AWS logs and fixed them by revising prompts and evaluation scripts, reducing hallucinated answers and human escalations.</li>
     </ul>
   </div>
 
   <div class="job">
-    <div class="row"><div><a href="https://tranzbox.au/"><b>Tranzbox</b></a>, Data Scientist, Quant &nbsp;|&nbsp; Melbourne, Australia (Remote)</div><div class="when">Jun 2023 to Sep 2024</div></div>
+    <div class="row"><div><a href="https://tranzbox.au/"><b>Tranzbox</b></a>, Data Scientist &nbsp;|&nbsp; Melbourne, Australia (Remote)</div><div class="when">Jun 2023 to Sep 2024</div></div>
     <ul>
-      <li>Benchmarked classical ML (SVM, tree ensembles) and reinforcement learning (A3C) for market prediction on large-scale stock data; built Airflow ETL and CI/CD on AWS; led a team of 4 engineers.</li>
+      <li>Benchmarked classifiers (SVM, random forest, XGBoost, the strongest) and trained A3C reinforcement-learning agents for market prediction, alongside statistical curve fitting and Fourier analysis to find buy and sell points.</li>
+      <li>Took models to production: Airflow ETL pipelines on AWS MWAA from data extraction to training and deployment, and GitHub Actions CI/CD releasing models to S3 and AWS Lambda; led a team of 4 engineers.</li>
     </ul>
   </div>
 
   <h2>Technical Skills</h2>
   <div class="skills">
-    <div><b>Models and training:</b> LoRA/QLoRA/PEFT, SFT, vision-language and 3D multimodal LLMs (MedGemma, BioViL, M3D-LaMed), YOLO, OpenCV, diffusion fine-tuning</div>
-    <div><b>LLM systems:</b> LangGraph, LangChain, LlamaIndex, multi-agent systems, RAG, RAGAS, DeepEval, LangSmith</div>
-    <div><b>Retrieval and data:</b> pgvector, Qdrant, OpenSearch, Elasticsearch, BM25, Cohere Rerank, PostgreSQL, Apache Airflow</div>
-    <div><b>Engineering:</b> Python, FastAPI, Docker, AWS (Lambda, S3, EC2, MWAA), GitHub Actions, Celery, Redis</div>
+    <div><b>Machine learning:</b> LoRA/QLoRA, vision-language and 3D multimodal models, diffusion models, OpenCV</div>
+    <div><b>LLM systems:</b> LangGraph, LlamaIndex, retrieval-augmented generation, evaluation (RAGAS, DeepEval)</div>
+    <div><b>Engineering:</b> Python, FastAPI, Docker, AWS, PostgreSQL/pgvector, Airflow, CI/CD</div>
   </div>
 
   <p class="foot">Last updated October 2026. Design based on <a href="https://github.com/jonbarron/website">Jon Barron's template</a>.</p>
