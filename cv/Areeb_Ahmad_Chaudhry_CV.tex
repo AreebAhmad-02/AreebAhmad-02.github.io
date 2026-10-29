@@ -1,0 +1,161 @@
+% Academic CV: Areeb Ahmad Chaudhry
+% Source of truth lives in Overleaf. Compiles with pdflatex.
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}            % open, readable serif
+\usepackage{microtype}          % better letter and word spacing
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{needspace}
+
+% One accent colour for links only; everything else is black
+\definecolor{linkblue}{HTML}{1A4D8F}
+\definecolor{rulegray}{HTML}{888888}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.06}
+
+% Section headings: small caps, black, thin grey rule
+\titleformat{\section}{\large\scshape}{}{0em}{}[\vspace{1pt}{\color{rulegray}\titlerule}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% Bullets with a little more air
+\setlist[itemize]{leftmargin=1.3em,itemsep=2pt,topsep=2pt,parsep=0pt,label=\textbullet}
+
+% \entry{Left bold}{Right}{Second line left}{Second line right}
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}}
+
+% \role{Organisation}{Title}{Location}{Dates}  (all on one line)
+\newcommand{\role}[4]{%
+  \par\vspace{4pt}\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1}, #2 \;\textbar\; \textit{#3} & #4 \\
+  \end{tabularx}}
+
+\newcommand{\NP}{\href{https://scholar.google.com/citations?user=8q5XnWQAAAAJ}{N.~Perwaiz}}
+\newcommand{\MMF}{\href{https://scholar.google.com/citations?user=tpfgan0AAAAJ}{M.~M.~Fraz}}
+\newcommand{\sep}{\;\textbar\;}
+
+\begin{document}
+
+%-------------------- HEADER --------------------
+\begin{center}
+  {\fontsize{24}{28}\selectfont\bfseries Areeb Ahmad Chaudhry}\\[6pt]
+  Islamabad, Pakistan\\[3pt]
+  \href{mailto:chaudhry.bese21seecs@seecs.edu.pk}{Email} \sep
+  \href{https://areebahmad-02.github.io}{Website} \sep
+  \href{https://scholar.google.com/citations?user=gaDnnFwAAAAJ}{Google Scholar} \sep
+  \href{https://github.com/AreebAhmad-02}{GitHub} \sep
+  \href{https://linkedin.com/in/areeb-ahmad02}{LinkedIn} \sep
+  \href{https://huggingface.co/Areeb-02}{Hugging Face} \sep
+  \href{https://medium.com/@ahmadareeb3026}{Medium}
+\end{center}
+
+%-------------------- RESEARCH INTERESTS --------------------
+\section{Research Interests}
+Multimodal learning and AI for health: trustworthy vision-language models that ground their outputs in evidence and know when they are likely wrong; efficient adaptation of foundation models where data and compute are scarce; reliable LLM agents and their evaluation.
+
+%-------------------- EDUCATION --------------------
+\section{Education}
+\entry{National University of Sciences and Technology (NUST), SEECS}{Nov 2021 -- Jun 2025}{Bachelor of Software Engineering}{Islamabad, Pakistan}
+\begin{itemize}
+  \item \textbf{Final Year Project (Grade: A):} Radixpert, an anatomy-guided vision-language model for radiology report generation, carried out in the \href{https://vision.seecs.edu.pk/}{MachVIS Lab}. Graded A in both semesters; published at FIT 2025 (IEEE).
+  \item \textbf{Relevant coursework:} Large Language Models; Linear Algebra \& ODEs; Probability \& Statistics; Numerical Methods; Data Structures \& Algorithms; Cloud Computing.
+\end{itemize}
+
+%-------------------- PUBLICATIONS --------------------
+\section{Publications}
+\begin{enumerate}[label={[\arabic*]},leftmargin=2em,itemsep=5pt]
+  \item M.~A.~R.~Farooqi, \textbf{Areeb Ahmad Chaudhry}, M.~Y.~Ghaffar, \NP, and H.~M.~Kiani. ``Radixpert: A Multimodal Approach to Medical Imaging.'' \textit{IEEE Intl. Conf. on Frontiers of Information Technology (FIT)}, 2025.
+        \href{https://ieeexplore.ieee.org/abstract/document/11333658}{[Paper]} \href{https://github.com/AreebAhmad-02/Radixpertv2}{[Code]}
+  \item M.~Javed, \textbf{Areeb Ahmad Chaudhry}, \NP, U.~Athar, A.~Salahudeen, and \MMF. ``FeLoRA16-SPP: Parameter-Efficient Fine-Tuning of 3D Multimodal LLMs for Radiology Report Generation and Visual Question Answering.'' \textit{MICCAI 2025 FLARE Challenge (Task 5)}, 2025.
+        \href{https://openreview.net/forum?id=cFrCa5Rvk6}{[OpenReview]}
+\end{enumerate}
+
+\textbf{Technical writing} (\href{https://medium.com/@ahmadareeb3026}{Medium}): \href{https://medium.com/@ahmadareeb3026/llm-as-operating-systems-agent-memory-b70c1213a5f7}{LLM as Operating Systems: Agent Memory} (2025); \href{https://medium.com/@ahmadareeb3026/training-wan2-2-for-your-character-custom-style-ultra-realistic-images-f8993350c862}{Training WAN2.2 for Character and Custom-Style Images} (2025); \href{https://medium.com/@ahmadareeb3026/deploying-your-comfyui-workflows-on-the-runpod-serverless-2f0f0a79a8e8}{Deploying ComfyUI Workflows on Runpod Serverless} (2025).
+
+%-------------------- RESEARCH EXPERIENCE --------------------
+\section{Research Experience}
+\entry{\href{https://vision.seecs.edu.pk/}{MachVIS Lab}, SEECS, NUST}{2024 -- Sep 2025}{Research Assistant (Jun -- Sep 2025); undergraduate researcher during final-year project. Advisor: \href{https://scholar.google.com/citations?user=8q5XnWQAAAAJ}{Dr.~Nazia Perwaiz}}{Islamabad, Pakistan}
+
+\vspace{6pt}
+\textbf{FeLoRA16-SPP: 3D multimodal LLM for CT report generation and VQA} \hfill Jun -- Sep 2025
+\begin{itemize}
+  \item Adapted a 3D multimodal LLM (M3D-LaMed) to write reports and answer clinical questions about CT scans, training only about 8\% of its 4.07B parameters by combining LoRA with a spatial pooling projector.
+  \item Reached an average GREEN score of 0.431 across 18 organ systems, up to 12\% above PHI3 and 4\% above Med3DVLM, with top scores on 9 organs; global VQA accuracy remained below the baselines.
+\end{itemize}
+
+\textbf{Radixpert: anatomy-guided VLM for radiology (Final Year Project, Grade A)} \hfill Sep 2024 -- Jun 2025
+\begin{itemize}
+  \item Co-developed a model that conditions a language model (MedGemma-4B) on both chest X-ray features and anatomical segmentation masks, so that generated reports are tied to anatomy; trained about 1.8\% of parameters with LoRA on 16,000 PadChest studies.
+  \item Reached RadCliQ 0.804, comparable to the strongest baseline (0.810); ablations showed each component's contribution (0.682 $\rightarrow$ 0.755 $\rightarrow$ 0.804), and anatomical grounding reduced left/right errors.
+\end{itemize}
+
+%-------------------- INDUSTRY EXPERIENCE --------------------
+\needspace{5\baselineskip}
+\section{Industry Experience}
+\vspace{-5pt}\role{\href{https://gosaas.ai/}{GoSaaS}}{AI Engineer}{Remote}{Jun 2025 -- Present}
+\begin{itemize}
+  \item Automated overpayment settlement for the finance team of a NYSE-listed US consumer-products company: a 5-page manual workflow became a single request, saving over 10 minutes per settlement.
+  \item Replaced manual lookup for an enterprise client with image-based search over 20,000 CAD drawings, comparing open-source image encoders and embedding models to match part photos to the right drawing; built proof-of-concept data extraction from scanned invoices and industrial diagrams.
+  \item Shipped 8+ production agents with built-in evaluation on the Oracle Marketplace, now used by Oracle partners as templates for their ERP systems; prototyped plain-English (NL2SQL) querying of enterprise databases.
+\end{itemize}
+
+\role{\href{https://heartstamp.com/}{Heartstamp}}{Founding AI Engineer}{Las Vegas, USA (Remote)}{Sep 2025 -- Jul 2026}
+\begin{itemize}
+  \item Designed the product's core multi-agent LLM system (support, design and creative agents), with persistent memory and provider-agnostic routing that let each task switch models without code changes, cutting generation cost.
+  \item Built an evaluation pipeline that benchmarked LLMs (GPT, Gemini, Grok and open-source models such as Kimi) on quality, speed and cost to choose production models, and caught regressions before each release.
+\end{itemize}
+
+\role{\href{https://codeacme.com/}{Codeacme}}{AI Engineer (Contract)}{Islamabad, Pakistan (Remote)}{Mar 2025 -- Sep 2025}
+\begin{itemize}
+  \item Compared open-source image-generation models (FLUX.1, Stable Diffusion, HunyuanImage, Qwen-Image) and trained 6--7 custom character and style LoRAs for subject-driven generation, including artist-style images for \href{https://unsplash.com/}{Unsplash}.
+  \item Shipped 15+ production ComfyUI workflows (image-to-image, style transfer, inpainting and outpainting, relighting, upscaling, colourisation), deployed to RunPod serverless through a CI/CD pipeline I built, removing always-on compute.
+\end{itemize}
+
+\role{\href{https://pam.ai/}{Pam AI}}{AI Support Engineer (Contract)}{Virginia, USA (Remote)}{Dec 2024 -- May 2025}
+\begin{itemize}
+  \item Maintained an 8,000-line production prompt for a voice AI assistant used by hundreds of car dealerships; traced escalated failures in production AWS logs and fixed them by revising prompts and evaluation scripts, reducing hallucinated answers and human escalations.
+\end{itemize}
+
+\role{\href{https://tranzbox.au/}{Tranzbox}}{Data Scientist}{Melbourne, Australia (Remote)}{Jun 2023 -- Sep 2024}
+\begin{itemize}
+  \item Benchmarked classifiers (SVM, random forest, XGBoost, the strongest) and trained A3C reinforcement-learning agents for market prediction, alongside statistical curve fitting and Fourier analysis to find buy and sell points.
+  \item Took models to production: Airflow ETL pipelines on AWS MWAA from data extraction to training and deployment, and GitHub Actions CI/CD releasing models to S3 and AWS Lambda; led a team of 4 engineers.
+\end{itemize}
+
+%-------------------- PROJECTS --------------------
+\section{Selected Projects}
+\begin{itemize}
+  \item \textbf{NUST BankLlama} \href{https://github.com/AreebAhmad-02/Financial-banking-rag-finetuning}{[GitHub]}: a self-hosted banking assistant (LLaMA 3.2-3B fine-tuned with QLoRA) with hybrid retrieval and guardrails against leaking personal data and jailbreaks.
+  \item \textbf{Scanned-document question answering} \href{https://github.com/AreebAhmad-02/Embedding-Models-Finetuning}{[GitHub]}: OCR of scanned tax documents plus retrieval with fine-tuned embedding models, improving retrieval by 4.3\%.
+  \item \textbf{Research-paper assistant} \href{https://github.com/AreebAhmad-02/Real-time-rag-pipeline-for-rag-research-papers}{[GitHub]}: retrieval over arXiv papers with semantic chunking, re-ranking and systematic evaluation.
+\end{itemize}
+
+%-------------------- AWARDS & LEADERSHIP --------------------
+\section{Awards \& Leadership}
+\begin{itemize}
+  \item \textbf{3rd of 40}, Devathon speed-programming hackathon, Devsinc \hfill Nov 2024
+  \item \textbf{Hack Club, NUST Chapter}: Executive, Deputy Director Finance, then Treasurer; led a 24-person team across logistics, finance, decor and liaison, and co-organised a 50-participant student hackathon \hfill 2022 -- 2024
+  \item \textbf{NUST Excursion Society}: Deputy Director Liaison, coordinating trips with the NUST administration \hfill 2023
+  \item \textbf{SEECS Endowment Fund Society}: Deputy Director, raising funds for deserving students \hfill 2022
+\end{itemize}
+
+%-------------------- SKILLS --------------------
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+  \textbf{Machine learning:} & LoRA/QLoRA, vision-language and 3D multimodal models, diffusion models, OpenCV \\
+  \textbf{LLM systems:} & LangGraph, LlamaIndex, retrieval-augmented generation, evaluation (RAGAS, DeepEval) \\
+  \textbf{Engineering:} & Python, FastAPI, Docker, AWS, PostgreSQL/pgvector, Airflow, CI/CD \\
+\end{tabularx}
+
+\end{document}

@@ -1,0 +1,42 @@
+name: Build CV
+
+# Edit cv/Areeb_Ahmad_Chaudhry_CV.tex and push. This compiles it and
+# replaces Areeb_Ahmad_Chaudhry_CV.pdf at the site root, which the
+# website links to.
+on:
+  push:
+    branches: [main]
+    paths: ['cv/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: Areeb_Ahmad_Chaudhry_CV.tex
+          working_directory: cv
+
+      - name: Commit PDF
+        run: |
+          cp cv/Areeb_Ahmad_Chaudhry_CV.pdf Areeb_Ahmad_Chaudhry_CV.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Areeb_Ahmad_Chaudhry_CV.pdf
+          git diff --cached --quiet && { echo "PDF unchanged"; exit 0; }
+          git commit -m "Rebuild CV PDF from cv/Areeb_Ahmad_Chaudhry_CV.tex"
+          git push
+
+      - name: Rebuild GitHub Pages
+        # Pushes made by the workflow token don't start a Pages build on their own.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages rebuild request failed; the site will update on the next push."
