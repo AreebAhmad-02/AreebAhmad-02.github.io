@@ -50,5 +50,6 @@ function cur(){var t=r.getAttribute('data-theme');return t==='dark'?'dark':'ligh
 function ic(){b.innerHTML=cur()==='dark'?'<i class="fa-solid fa-sun"></i>':'<i class="fa-solid fa-moon"></i>';}
 b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}ic();});ic();})();
 </script>
+<script data-goatcounter="https://areebahmad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
