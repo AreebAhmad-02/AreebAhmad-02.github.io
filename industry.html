@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="wrap">
-  <header class="top"><nav><a href="./">Home</a><a href="./#publications">Publications</a><a href="./#articles">Articles</a><a class="on" href="industry.html">Industry</a><a href="cv.html">CV</a><button class="theme" id="themeBtn" type="button" aria-label="Switch light or dark mode" title="Light / dark"><i class="fa-solid fa-moon"></i></button></nav></header>
+  <header class="top"><nav><a href="./">Home</a><a href="./#publications">Publications</a><a href="./#articles">Articles</a><a href="./#projects">Projects</a><a class="on" href="industry.html">Industry</a><a href="cv.html">CV</a><button class="theme" id="themeBtn" type="button" aria-label="Switch light or dark mode" title="Light / dark"><i class="fa-solid fa-moon"></i></button></nav></header>
 
   <h1>Industry</h1>
   <p>Alongside research, I've spent over three years building production ML and LLM systems for companies in the US, Australia and Pakistan. Much of it is about the same question as my research: can the system back up what it says?</p>
@@ -36,14 +36,15 @@
     <ul>
       <li>Designed the product's core multi-agent LLM system (support, design and creative agents), with persistent memory and provider-agnostic routing that let each task switch models without code changes, cutting generation cost.</li>
       <li>Built an evaluation pipeline that benchmarked LLMs (GPT, Gemini, Grok and open-source models such as Kimi) on quality, speed and cost to choose production models, and caught regressions before each release.</li>
+      <li>Led fine-tuning and image generation for the greeting cards: LoRA fine-tuning of theme, style and character LoRAs, ControlNets for structural guidance, and upscaling pipelines. Benchmarked open-source FLUX models (FLUX Dev, FLUX Kontext, FLUX.2) against Nano Banana and GPT Image, tuned the generation prompts for every card theme and occasion, built a golden evaluation set, and developed photo-to-LEGO image editing.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="row"><div><a href="https://codeacme.com/"><b>Codeacme</b></a>, AI Engineer (Contract) &nbsp;|&nbsp; Islamabad, Pakistan (Remote)</div><div class="when">Mar 2025 to Sep 2025</div></div>
     <ul>
-      <li>Compared open-source image-generation models (FLUX.1, Stable Diffusion, HunyuanImage, Qwen-Image) and trained 6–7 custom character and style LoRAs for subject-driven generation, including artist-style images for <a href="https://unsplash.com/">Unsplash</a>.</li>
-      <li>Shipped 15+ production ComfyUI workflows (image-to-image, style transfer, inpainting and outpainting, relighting, upscaling, colourisation), deployed to RunPod serverless through a CI/CD pipeline I built, removing always-on compute.</li>
+      <li>Compared open-source text-to-image and image-to-image models (FLUX, Stable Diffusion, HunyuanImage, Qwen-Image) and fine-tuned 6–7 custom character and style LoRAs for subject-driven generation on B200 and H200 GPUs, including artist-style images for <a href="https://unsplash.com/">Unsplash</a>.</li>
+      <li>Shipped 15+ production ComfyUI workflows (image-to-image, style transfer, inpainting and outpainting, relighting, upscaling, colourisation), deployed to RunPod serverless and Azure through a CI/CD pipeline I built, removing always-on compute.</li>
     </ul>
   </div>
 
